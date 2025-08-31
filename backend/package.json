@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && cp package.json dist/package.json",
     "start": "node ./dist/core/index.js",
-    "start:dev": "ts-node-dev --files ./src/core/index.ts index.d.ts"
+    "start:dev": "ts-node-dev --files ./src/core/index.ts index.d.ts",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "lint:strict": "eslint src --ext .ts --max-warnings=0"
   },
   "keywords": [],
   "author": "",
@@ -37,6 +40,14 @@
     "@types/express": "^5.0.3",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.41.0",
+    "@typescript-eslint/parser": "^8.41.0",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-no-unsanitized": "^4.1.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.2"
   }
