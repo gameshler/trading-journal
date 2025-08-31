@@ -6,8 +6,11 @@ on:
     branches: [main, dev]
 
 jobs:
-  lint:
+  lint-backend:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -22,13 +25,10 @@ jobs:
         with:
           node-version: 22
           cache: "pnpm"
-          cache-dependency-path: "**/pnpm-lock.yaml"
+          cache-dependency-path: "backend/pnpm-lock.yaml"
 
-      - name: Check pnpm version
-        run: pnpm --version
-
-      - name: Install dependencies
+      - name: Install backend dependencies
         run: pnpm install
 
-      - name: Run ESLint
+      - name: Run backend ESLint
         run: pnpm lint
