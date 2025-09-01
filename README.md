@@ -1,4 +1,4 @@
-### Trading Journal API
+# Trading Journal API
 
 A Node.js Express TypeScript API for managing a trading journal with integrated authentication system.
 
