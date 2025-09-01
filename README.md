@@ -19,13 +19,11 @@ git clone https://github.com/gameshler/trading-journal.git
 cd trading-journal/backend
 
 pnpm install or add
-
 ```
 
 ## Environment Variables
 
 ```
-
 MONGO_URI=
 PORT=3000
 JWT_SECRET=
@@ -34,7 +32,6 @@ EMAIL_SENDER=
 RESEND_API_KEY=
 CLIENT_URL=
 NODE_ENV= development
-
 ```
 
 ## License
