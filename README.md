@@ -1,6 +1,6 @@
 # Trading Journal API
 
-A Node.js Express TypeScript API for managing a trading journal with integrated authentication system and weighted average position calculation.
+A Node.js Express TypeScript API for managing a trading journal with integrated authentication system
 
 ## Features
 
