@@ -9,7 +9,7 @@ A Node.js Express TypeScript API for managing a trading journal with integrated 
 
 ## Prerequisites
 
-- Node.js 18+
+- Node.js 24+
 - Mongoose
 - npm, pnpm, or yarn
 
